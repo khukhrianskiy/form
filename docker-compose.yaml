@@ -1,0 +1,19 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+
+  php:
+    image: php:8-fpm
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+

@@ -1,0 +1,13 @@
+{
+    "name": "pavel/form",
+    "description": "pavel/form",
+    "authors": [
+        {
+            "name": "pavel",
+            "email": "khuhrianskiy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    }
+}
